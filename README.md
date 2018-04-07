@@ -1,5 +1,5 @@
 ### Data Representation for Analysis
- This is a program developed to overlay number of sigmoid graphs over one anothe for comparision.
+ This is a program developed to overlay number of sigmoid graphs over one another for comparison.
 Originally it was developed to compare two data representing the responses of user to the application of gain and what they feel the gain to be.
 It has been generalised to meet other applications as well.
 
