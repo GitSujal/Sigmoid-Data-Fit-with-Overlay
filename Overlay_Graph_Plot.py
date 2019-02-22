@@ -6,15 +6,18 @@ import FiletoClass as Ftc
 import sigmoidGraphFit as Sgf
 
 def graphfunction(nameofthegraph):
-	'''  Graph function takes one argument that is the label of the graph. 
-	1.0. The function asks for the name of the file holding the data in CSV format.
-	1.1. Data is loaded using FiletoClass module which return an object with required data.
-	1.2. The data is then plotted on the graph.
-	1.3. The data is used to fit sigmoid curve using sigmoidgraphfit module
-	1.4. The sigmoid curve fit reutrn a class object with x,y values of curve and PSE values.
-	1.5. The sigmoid fit is plotted in the graph along with the previous scatter data.
-	1.6. The values are printed along with a directional arrow.'''
+	''' 
+		 Graph function takes one argument that is the label of the graph. 
+			1.0. The function asks for the name of the file holding the data in CSV format.
+			1.1. Data is loaded using FiletoClass module which return an object with required data.
+			1.2. The data is then plotted on the graph.
+			1.3. The data is used to fit sigmoid curve using sigmoidgraphfit module
+			1.4. The sigmoid curve fit reutrn a class object with x,y values of curve and PSE values.
+			1.5. The sigmoid fit is plotted in the graph along with the previous scatter data.
+			1.6. The values are printed along with a directional arrow.
+	'''
 
+	#Getting File Name
 	print("Enter the name of the file containing data in csv format: ")
 	filename_input = raw_input()
 	data_from_file = Ftc.fileopen(filename=filename_input)
@@ -53,7 +56,9 @@ graphfunction(nameofthegraph= 'Referenced')
 graphfunction(nameofthegraph= 'Unreferenced')
 
 
-'''Formatting the graph defining axis labels title of the graph and grids'''
+'''
+	Formatting the graph defining axis labels title of the graph and grids.
+'''
 
 #Plotting Legends
 plt.legend(loc='upper right',scatterpoints=1,numpoints=1,ncol=2,fontsize=15)

@@ -6,8 +6,11 @@ from scipy.optimize import curve_fit
 # def sigmoid(x, x0, b,a):
 # 	y = 1/ (1 + a*np.exp(b*(x-x0)))
 #     return y
-# 	''' Defining a sigmoid graph using mathematical equation. 
-# 	A sigmoid graph is a S-shaped curve and we will be using only a part of sigmoid curve to fit our data.'''
+''' 
+	Defining a sigmoid graph using mathematical equation. 
+	A sigmoid graph is a S-shaped curve.
+		we will be using only a part of sigmoid curve to fit our data.
+'''
 
 def sigmoid(x,x0,b,a):
 	y = 1/(1 + a*np.exp(b*(x-x0)) )
